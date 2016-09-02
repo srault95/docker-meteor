@@ -11,7 +11,7 @@ cp -R /app $COPIED_APP_PATH
 cd $COPIED_APP_PATH
 
 npm install --production
-meteor build --directory $BUNDLE_DIR --server=http://localhost:3000
+meteor build --directory $BUNDLE_DIR
 
 cd $BUNDLE_DIR/bundle/programs/server/
 npm install
